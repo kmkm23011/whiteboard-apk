@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whiteboard Animation"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offline video generator"
+            android:textSize="13sp"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Script"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One line = one scene. Any language."
+            android:textSize="12sp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etScript"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="top|start"
+            android:hint="Type your script here"
+            android:inputType="textMultiLine"
+            android:background="#1AFFFFFF"
+            android:padding="12dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voiceover (optional)"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnPickAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Audio File" />
+
+        <TextView
+            android:id="@+id/tvAudioName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No audio selected"
+            android:textSize="12sp"
+            android:paddingTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resolution"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spResolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aspect Ratio"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spAspect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seconds per scene (used when no audio)"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etSceneSeconds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:inputType="number"
+            android:background="#1AFFFFFF"
+            android:padding="12dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swLowHeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Low heat mode (slower, cooler)"
+            android:paddingTop="24dp" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="CREATE VIDEO"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:textSize="13sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp" />
+
+    </LinearLayout>
+</ScrollView>
